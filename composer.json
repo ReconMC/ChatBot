@@ -16,7 +16,7 @@
   },
   "autoload-dev": {
     "psr-2": {
-      "Shotbow\\ChatBot\\": "tests/"
+      "Shotbow\\ChatBot\\Test\\": "tests/"
     }
   },
   "require-dev": {

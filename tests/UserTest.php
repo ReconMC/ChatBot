@@ -1,5 +1,5 @@
 <?php
-namespace Shotbow\ChatBot;
+namespace Shotbow\ChatBot\Test;
 
 class UserTest extends \PHPUnit_Framework_TestCase
 {
