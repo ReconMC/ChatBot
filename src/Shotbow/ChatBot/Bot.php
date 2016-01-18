@@ -139,6 +139,7 @@ MySQL;
                 'mcstatus' => [$this, 'command_mcstatus'],
                 'radio'    => [$this, 'command_radio'],
                 'arrow'    => [$this, 'command_arrow'],
+                'gameinfo' => [$this, 'command_gameinfo'],
             ];
         }
 
@@ -417,7 +418,13 @@ MySQL;
         $message = "Sometimes it's Mojang.  [url=http://xpaw.ru/mcstatus/]Have you checked?[/url]";
         $this->postMessage($message);
     }
-
+    
+    protected function command_gameinfo(Shotbow_ChatBot_User $sender, $arguments)
+    {
+        $message
+            = 'If you would like to view more information about our gamemodes, click [url=https://shotbow.net/forum/wiki/index/]Here![/url].';
+        $this->postMessage($message);
+    }
     protected function command_createMineZEvent(Shotbow_ChatBot_User $sender, $arguments)
     {
         $message = "No.  That's not how this works.  Staff run events in their spare time.";
